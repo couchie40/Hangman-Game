@@ -1,154 +1,94 @@
-body { 
-    font-family:sans-serif; 
-    font-weight:bold; 
-    font-size:16pt;
+#container {position: absolute;
+  top: 300px;
+  left: 500px;
 }
-/* Topmatter */
-.topmatter {
-    height:210px;    
+ 
+h2 {
+  font-size: 50px;
 }
-.bottommatter{
-    background:#f1f1f1;
-    height:auto;
+ 
+div {
+  text-align: right;
 }
-/* For the left 'Guess A Letter!' and 'Guessed Letter' boxes. */
-.side-container {
-    margin-top:45px;
-    margin-left:130px;
-    width:170px;
-    text-align:center;
+ 
+.character-image {
+  width: 250px;
+  height: 200px;
+  border-radius: 25px;
 }
-.container-title {
-    color:#6f5a2d;
+ 
+#character-div {
+  width: 300px;
+  padding: 20px;
+  margin-left: 10px;
 }
-.input-area {
-    width:75px;
-    height:31px;
-    margin:auto;
-    padding:3pt;
-    border: 1px #6f5a2d solid;
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;
-    border-radius:15px;
-    background:#ebe2ce;
+ 
+#game-section {
+  float: left;
+  width: 300px;
+  height: 750px;
+  padding: 20px;
+  margin-bottom: 50px;
+  border: 7px dotted #f5f5f5;
+  box-shadow: inset 0 -3px 0 0 #f5f5f5, 0 3px 0 0 #f5f5f5;
 }
-#letter-input {
-    border:1px #6f5a2d solid;
-    width:20pt;
-    font-size:14pt;
-    text-align:center;
+ 
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+
+ 
+body {
+  position: relative;
+  color: #fff;
+  background: #000;
 }
-.guessed-letter {
-    color:#792c15;
+ 
+* {
+  font-family: 'Modak', cursive;
+  font-size: 20px;
+  letter-spacing: 3px;
 }
-/* Word Box */
-.word-box {
-    width:250px;
-    margin:auto;
-    margin-top:25px;
-    text-align:center;
+ 
+.modak {
+  position: relative;
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 200px;
+  font-style: italic;
+  line-height: 1;
+  background-image: linear-gradient(#378dbc 0%, #b6e8f1 46%, #fff 50%, #32120e 54%, #ffc488 58%, #582c11 90%, #ec9b4e 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 4px #f5f5f5;
 }
-.word-display {
-    background:#ebe2ce;
-    border:1px #6f5a2d solid;
-    height:31px;
-    padding:3pt;
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;
-    border-radius:15px;
+ 
+.modak::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding-right: 300px;
+  content: "modak";
+  background-image: linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+  background-position: -680px 0;
+  background-clip: text;
+  -webkit-text-stroke: 0;
 }
-.shown-letter {
-    border-bottom: 3px #000 solid;
-    padding: 0 2px;
-    margin: 0 2px;
-    color:#1c2025;
+ 
+.dreams {
+  position: absolute;
+  z-index: 20;
+  margin: 0;
+  margin-top: -120px;
+  margin-left: 400px;
+  font-family: "Tangerine", serif;
+  font-size: 160px;
+  color: #f975f7;
+  filter: text-shadow: 4px 4px 4px #aaa;
+};
+  transform: rotate(-15deg);
+  -webkit-text-stroke: 1px #f008b7;
 }
-/* Hangman Area */
-.hang-container {
-    margin-top:-10px;
-    margin-right: 90px; 
-    width:200px;
-    height:205px;
-    float:right;
-}
-.scaffolding-top {
-    width:108px;
-    height:5px;
-    background:#332915;
-}
-.scaffolding-left {
-    width:5px;
-    height:200px;
-    background:#332915;
-    float:left;
-}
-.scaffolding-base {
-    width:150px;
-    height:5px;
-    background:#332915;
-}
-.draw-area {
-    width:200px;
-    height:200px;
-    text-align:center;
-}
-.rope {
-    margin:auto;
-    height:25px;
-    width:5px;
-    background:#a59885;
-}
-.head {
-    margin:auto;
-    height:30px;
-    width:30px;
-    background:#000;
-    -webkit-border-radius: 15px;
-    -moz-border-radius:15px;
-    border-radius:15px;
-}
-.armbox {
-    margin:auto;
-    width:100px;
-}
-.leftarm {
-    float:left;
-    height:10px;
-    width:45px;
-    background:#000;
-}
-.rightarm {
-    float:right;
-    height:10px;
-    width:45px;
-    background:#000;
-}
-.torso {
-    margin:auto;
-    width:10px;
-    height:50px;
-    background:#000;
-}
-.legbox {
-    margin:auto;
-    height:60px;
-    width:30px;
-}
-.leftleg {
-    float:left;
-    width:10px;
-    height:60px;
-    background:#000;
-}
-.rightleg {
-    float:right;
-    width:10px;
-    height:60px;
-    background:#000;
-}
-.pelvis {
-    margin:auto;
-    height:10px;
-    width:10px;
-    background:#000;
+ 
+.windows .dreams {
+  -webkit-text-stroke: 4px #f008b7;
 }
